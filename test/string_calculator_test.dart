@@ -29,6 +29,19 @@ void main() {
     });
 
 
+    // STEP 4: NEW LINE DELIMITERS
+    test('should handle new line as delimiter along with commas', () {
+      expect(calculator.add('1\n2,3'), 6);
+    });
+
+    // STEP 5: CUSTOM DELIMITERS
+    test('should handle custom delimiter specified in format //[delimiter]\\n[numbers]', () {
+      expect(calculator.add('//;\n1;2'), 3);
+    });
+
+
+
+
   });
 }
 
