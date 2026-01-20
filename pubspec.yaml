@@ -1,0 +1,11 @@
+name: string_calculator
+description: A String Calculator implementation using TDD
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dev_dependencies:
+  test: ^1.24.0
+
