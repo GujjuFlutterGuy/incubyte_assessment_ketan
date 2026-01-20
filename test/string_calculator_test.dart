@@ -23,6 +23,11 @@ void main() {
       expect(calculator.add('1,5'), 6);
     });
 
+    // STEP 3: ANY AMOUNT OF NUMBERS
+    test('should return sum for any amount of comma-separated numbers', () {
+      expect(calculator.add('1,2,3,4,5'), 15);
+    });
+
 
   });
 }
