@@ -14,6 +14,15 @@ void main() {
       expect(calculator.add(''), 0);
     });
 
+    // STEP 2: SINGLE & TWO NUMBERS
+    test('should return the number itself for single number', () {
+      expect(calculator.add('1'), 1);
+    });
+
+    test('should return sum for two comma-separated numbers', () {
+      expect(calculator.add('1,5'), 6);
+    });
+
 
   });
 }
